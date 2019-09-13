@@ -48,10 +48,9 @@ Functional requirements
 		2.1.7	All changes must be saved if the user chooses to do so
 		2.1.8	If changes are saved, event must appear in calendar
 
-	2.2	Add weekly periodical events
+	2.2	Add periodical events
 		2.2.1	User must be able to click an option to edit an event
-		2.2.2	User must have the option while editing the event to make it repetitive
-		2.2.3	User must be able to make the event weekly
+		2.2.2	User must have the option to make an event repeat weekly, monthly and yearly.
 
 	2.3	Edit & delete events 
 		2.3.1	User must be able to click an option to edit an event
@@ -64,7 +63,7 @@ Functional requirements
 		2.4.1	The program must extract birthday stored in profile, if it exists
 		2.4.2	If it exists, the birthday must appear in the calendar as a yearly repeating event 
 
-	2.5	Color marking for different category of events – split based on vet, shot, grooming appointments
+	2.5	Color marking for different category of events – split based on vet, shot, grooming appointments (Desirable)
 		2.5.1	Program must store separate colors for events
 		2.5.2	Program must detect the category based on description entered
 		2.5.3	The events must appear with the separate colors in the calendar 
