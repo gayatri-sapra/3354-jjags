@@ -37,7 +37,6 @@ Functional requirements
 		1.6.2	The age must appear in year, months format under breed information 
 
 2	Calendar
-
 	2.1	Create an event with starting and ending time
 		2.1.1	User must be able to click an option to create an event
 		2.1.2	When user clicks option, dialog box with event details must open
