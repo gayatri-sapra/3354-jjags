@@ -1,0 +1,121 @@
+Software Requirements Specifications (SRS) for Pet Nanny
+Definitions, Acronyms, and Abbreviations 
+Functional requirements 
+1	Profile
+1.1	Picture: Upload, delete and change picture of the dog
+1.1.1	User must be able to click an option to edit the image of their dog
+1.1.2	The option should give the ability to upload, delete or change the picture
+1.1.3	If the user chooses to upload, the program should open their photo library
+1.1.4	If the user chooses to delete, the user should be given the option to confirm their action
+1.1.5	If the user chooses to change the image, options to edit the image must be displayed (crop, resize, etc.)
+1.1.6	All changes must be saved if the user chooses to do so
+1.1.7	Correct image must display in the profile picture region 
+
+1.2	Birthday: Add and change birthday for the dog
+1.2.1	User must be able to click an option to add or change their dog birthday
+1.2.2	The option should give the ability to add or change the birthday
+1.2.3	If the user chooses to add the birthday, the program should display a calendar format in which the user chooses the birthday
+1.2.4	If the user chooses to change the birthday, the program should display a calendar format in which the user chooses the birthday
+1.2.5	All changes must be saved if the user chooses to do so
+1.2.6	Birthday must display under the name of the dog 
+
+1.3	Name: Displays name of the dog below the profile picture
+1.3.1	User must be able to add/change the name of their dog
+1.3.2	The name of the dog must display under the profile picture region
+
+1.4	Owner: Shows name of the dog’s owner
+1.4.1	User must be able to add/change their name
+1.4.2	The name of the owner must display under the dog breed 
+
+1.5	Breed: Type of dog
+1.5.1	User must be able to add/change the breed 
+1.5.2	The breed must appear under the birthday
+
+
+1.6	Age: Age of the dog 
+1.6.1	The age of the dog must be generated based off of entered birthday
+1.6.2	The age must appear in year, months format under breed information 
+ 
+2	Calendar
+2.1	Create an event with starting and ending time
+2.1.1	User must be able to click an option to create an event
+2.1.2	When user clicks option, dialog box with event details must open
+2.1.3	User must be able to change date of event 
+2.1.4	User must be able to change starting time of event 
+2.1.5	User must be able to change ending time of event 
+2.1.6	User must be able to add title of event 
+2.1.7	All changes must be saved if the user chooses to do so
+2.1.8	If changes are saved, event must appear in calendar
+
+2.2	Add weekly periodical events 
+2.2.1	User must be able to click an option to edit an event
+2.2.2	User must have the option while editing the event to make it repetitive
+2.2.3	User must be able to make the event weekly
+
+2.3	Edit & delete events 
+2.3.1	User must be able to click an option to edit an event
+2.3.2	User must have the option to make changes if they choose to edit
+2.3.3	User must have the option to delete the event if they choose to 
+2.3.4	All changes must be saved if the user chooses to do so
+2.3.5	If changes are saved, they should be viewable in the calendar
+
+2.4	Automatically adds birthday by extracting from Profile
+2.4.1	The program must extract birthday stored in profile, if it exists
+2.4.2	If it exists, the birthday must appear in the calendar as a yearly repeating event 
+
+2.5	Color marking for different category of events – split based on vet, shot, grooming appointments
+2.5.1	Program must store separate colors for events
+2.5.2	Program must detect the category based on description entered
+2.5.3	The events must appear with the separate colors in the calendar 
+3	Health/Medical History (Desirable)
+3.1	Enter/edit medical history: conditions, injuries, diseases, medication
+3.1.1	User must be able to click an option to enter or edit medical history
+3.1.2	The option should give the ability to add different types of history
+3.1.3	Different options must exist for conditions, injuries, diseases and medications
+3.1.4	All changes must be saved if the user chooses to do so
+3.1.5	If changes are saved, they should be viewable in the medical history section 
+
+3.2	Add/edit vet information
+3.2.1	User must be able to click an option to enter or edit vet information 
+3.2.2	The option should give the ability to add name of vet
+3.2.3	The option should give the ability to add location of vet
+3.2.4	The option should give the ability to add next appointment with vet
+
+3.3	Add/edit shots that have been given
+3.3.1	User must be able to click an option to enter or edit shots that are given
+3.3.2	User must be able to view in list format information about shots given
+3.3.3	Program must show shots that have been given with checkmark
+3.3.4	All changes must be saved if the user chooses to do so
+3.3.5	If changes are saved, they should be viewable in the shots section
+
+3.4	Add/edit shots that are pending
+3.4.1	User must be able to click an option to enter or edit shots that are pending
+3.4.2	User must be able to view in list format information about shots pending
+3.4.3	Program must show pending shots with cross
+3.4.4	All changes must be saved if the user chooses to do so
+3.4.5	If changes are saved, they should be viewable in the shots section
+
+3.5	Food/Water intake schedule
+3.5.1	User must be able to click an option to enter amount of food and water needed
+3.5.2	All changes must be saved if the user chooses to do so
+3.5.3	If changes are saved, they should be viewable in the intake section
+
+3.6	Grooming
+3.6.1	User must be able to click an option to enter or edit grooming information 
+3.6.2	The option should give the ability to add name of groomer
+3.6.3	The option should give the ability to add location of groomer
+3.6.4	The option should give the ability to add next appointment for grooming
+
+ 
+4	Settings
+4.1	About
+4.1.1	Program must display information about the app
+
+4.2	FAQ
+4.2.1	Program must display questions with answers which might be asked by user
+4.2.2	Program must display questions with answers which have been asked by users in the Android store
+4.2.3	Program must frequently import questions being asked in the Android store, and display answers
+
+4.3	Help
+4.3.1	Program must display Help information
+4.3.2	Program must link FAQs for more help
