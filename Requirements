@@ -67,41 +67,39 @@ Functional requirements
 2.5.1	Program must store separate colors for events
 2.5.2	Program must detect the category based on description entered
 2.5.3	The events must appear with the separate colors in the calendar 
+
+
 3	Health/Medical History (Desirable)
 3.1	Enter/edit medical history: conditions, injuries, diseases, medication
-3.1.1	User must be able to click an option to enter or edit medical history
-3.1.2	The option should give the ability to add different types of history
-3.1.3	Different options must exist for conditions, injuries, diseases and medications
-3.1.4	All changes must be saved if the user chooses to do so
-3.1.5	If changes are saved, they should be viewable in the medical history section 
+3.1.1	User will be able to click an option to enter or edit medical history
+3.1.2	Different options must exist for conditions, injuries, diseases and medications
+3.1.3	If changes are saved, they should be viewable in the medical history section 
 
 3.2	Add/edit vet information
-3.2.1	User must be able to click an option to enter or edit vet information 
+3.2.1	User will be able to click an option to enter or edit vet information 
 3.2.2	The option should give the ability to add name of vet
 3.2.3	The option should give the ability to add location of vet
 3.2.4	The option should give the ability to add next appointment with vet
 
 3.3	Add/edit shots that have been given
-3.3.1	User must be able to click an option to enter or edit shots that are given
-3.3.2	User must be able to view in list format information about shots given
-3.3.3	Program must show shots that have been given with checkmark
-3.3.4	All changes must be saved if the user chooses to do so
-3.3.5	If changes are saved, they should be viewable in the shots section
+3.3.1	User will be able to click an option to enter or edit shots that are given
+3.3.2	User will be able to view in list format information about shots given
+3.3.3	Program will show shots that have been given with checkmark
+3.3.4	If changes are saved, they should be viewable in the shots section
 
 3.4	Add/edit shots that are pending
-3.4.1	User must be able to click an option to enter or edit shots that are pending
-3.4.2	User must be able to view in list format information about shots pending
-3.4.3	Program must show pending shots with cross
-3.4.4	All changes must be saved if the user chooses to do so
-3.4.5	If changes are saved, they should be viewable in the shots section
+3.4.1	User will be able to click an option to enter or edit shots that are pending
+3.4.2	User will be able to view in list format information about shots pending
+3.4.3	Program will show pending shots with cross
+3.4.4	If changes are saved, they should be viewable in the shots section
 
 3.5	Food/Water intake schedule
-3.5.1	User must be able to click an option to enter amount of food and water needed
+3.5.1	User will be able to click an option to enter amount of food and water needed
 3.5.2	All changes must be saved if the user chooses to do so
 3.5.3	If changes are saved, they should be viewable in the intake section
 
 3.6	Grooming
-3.6.1	User must be able to click an option to enter or edit grooming information 
+3.6.1	User will be able to click an option to enter or edit grooming information 
 3.6.2	The option should give the ability to add name of groomer
 3.6.3	The option should give the ability to add location of groomer
 3.6.4	The option should give the ability to add next appointment for grooming
@@ -109,14 +107,13 @@ Functional requirements
  
 4	Settings
 4.1	About
-4.1.1	Program will display information about the app
+4.1.1	Program must display information about the app
 
 4.2	FAQ
-4.2.1	Program will display questions with answers which might be asked by user
-4.2.2	Program will display questions with answers which have been asked by users in the Android store
-4.2.3	Program will frequently import questions being asked in the Android store, and display answers
+4.2.1	Program must display questions with answers which might be asked by user
+4.2.2	Program must display questions with answers which have been asked by users in the Android store
+4.2.3	Program must frequently import questions being asked in the Android store, and display answers
 
 4.3	Help
-4.3.1	Program will display Help information
-4.3.2	Program will link FAQs for more help
-4.3.3 Program will display contact information of developers 
+4.3.1	Program must display Help information
+4.3.2	Program must link FAQs for more help
