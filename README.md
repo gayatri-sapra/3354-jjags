@@ -1,6 +1,6 @@
-## Team Name: JJAGS
-## Project Name: Pet Nanny 
-## Class: CS 3354
+## Team Name:       JJAGS
+## Project Name:    Pet Nanny 
+## Class:                 CS 3354
 ###
 ## Introduction
 ### The Pet Nanny is an application which is directed towards owners of pets. They can download this android application to maintain the information of their pet. The app has four main sections. It has a Profile, Calendar, Health  and an About section.
