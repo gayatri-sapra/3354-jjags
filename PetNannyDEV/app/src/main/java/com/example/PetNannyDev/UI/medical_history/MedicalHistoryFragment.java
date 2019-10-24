@@ -23,7 +23,7 @@ public class MedicalHistoryFragment extends Fragment {
         medicalHistoryViewModel =
                 ViewModelProviders.of(this).get(MedicalHistoryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_medical_history, container, false);
-        final TextView textView = root.findViewById(R.id.title_medical_history);
+        final TextView textView = root.findViewById(R.id.titleMedicalHistory);
         medicalHistoryViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
