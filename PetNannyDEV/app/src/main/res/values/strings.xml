@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PetNannyDEV</string>
+    <string name="title_home">Profile</string>
+    <string name="title_calender">Calender</string>
+    <string name="title_medical_history">Medical History</string>
+    <string name="title_about">About</string>
+</resources>
