@@ -81,6 +81,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/foodWaterText" />
 
+<<<<<<< HEAD
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
@@ -102,4 +103,6 @@
         tools:layout_editor_absoluteX="156dp"
         tools:layout_editor_absoluteY="236dp" />
 
+=======
+>>>>>>> 33defeedb52766b1639af2ef452dbaa8be1f95b8
 </androidx.constraintlayout.widget.ConstraintLayout>
