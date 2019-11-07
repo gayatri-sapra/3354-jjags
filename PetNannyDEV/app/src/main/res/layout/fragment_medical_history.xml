@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:text="Vet Information:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conditionsText" />
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:text="Given Shots:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vetText" />
@@ -81,28 +81,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/foodWaterText" />
 
-<<<<<<< HEAD
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
+        android:id="@+id/edtInput"
+        android:layout_width="276dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="1"
+        android:hint="Conditions will be entered here"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:maxLines="4"
+        android:scrollHorizontally="false"
         app:layout_constraintBottom_toTopOf="@+id/vetText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/conditionsText" />
+        app:layout_constraintTop_toBottomOf="@+id/conditionsText" /><![CDATA[
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="236dp" />
 
-=======
+
+
+
+
+    =======
 >>>>>>> 33defeedb52766b1639af2ef452dbaa8be1f95b8
+
+
+]]>
 </androidx.constraintlayout.widget.ConstraintLayout>
