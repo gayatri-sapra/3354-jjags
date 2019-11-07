@@ -27,19 +27,15 @@
         app:layout_constraintTop_toBottomOf="@+id/titleMedicalHistory" />
 
     <TextView
-        android:id="@+id/vetText"
+        android:id="@+id/conditionsText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-<<<<<<< HEAD
         android:layout_marginTop="100dp"
-=======
-        android:layout_marginTop="10dp"
->>>>>>> 7fc91d1725f44d4a60a2ba625d173707af19322e
         android:text="Vet Information:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/conditionsText" />
 
     <TextView
         android:id="@+id/givenShotsText"
@@ -47,10 +43,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:text="Given Shots:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vetText" />
+        app:layout_constraintTop_toBottomOf="@+id/conditionsText2" />
 
     <TextView
         android:id="@+id/pendingShotsText"
@@ -98,7 +94,7 @@
         android:maxLength="2000"
         android:maxLines="4"
         android:scrollHorizontally="false"
-        app:layout_constraintBottom_toTopOf="@+id/vetText"
+        app:layout_constraintBottom_toTopOf="@+id/conditionsText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conditionsText"
         app:layout_constraintVertical_bias="0.0" /><![CDATA[
