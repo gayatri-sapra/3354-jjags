@@ -32,10 +32,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
+<<<<<<< HEAD
         android:layout_marginTop="100dp"
+=======
+        android:layout_marginTop="10dp"
+>>>>>>> 7fc91d1725f44d4a60a2ba625d173707af19322e
         android:text="Vet Information:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/conditionsText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <TextView
         android:id="@+id/givenShotsText"
@@ -81,6 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/foodWaterText" />
 
+<<<<<<< HEAD
     <EditText
         android:id="@+id/edtInput"
         android:layout_width="276dp"
@@ -97,6 +102,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conditionsText" /><![CDATA[
 
+=======
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/conditionsText"
+        app:layout_constraintTop_toBottomOf="@+id/conditionsText" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/conditionsText"
+        app:layout_constraintTop_toBottomOf="@+id/vetText" />
+>>>>>>> 7fc91d1725f44d4a60a2ba625d173707af19322e
 
 
 
