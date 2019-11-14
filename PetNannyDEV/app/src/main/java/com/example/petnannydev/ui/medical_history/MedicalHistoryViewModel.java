@@ -10,7 +10,6 @@ public class MedicalHistoryViewModel extends ViewModel {
 
     public MedicalHistoryViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is the medical history fragment");
     }
 
     public LiveData<String> getText() {
