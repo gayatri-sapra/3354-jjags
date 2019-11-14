@@ -28,10 +28,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="10dp"
         android:text="Vet Info:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/conditionsText" />
+        app:layout_constraintTop_toBottomOf="@+id/pShotsInput5" />
 
 
     <TextView
@@ -40,21 +40,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="10dp"
         android:text="Given Shots:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/conditionsText2" />
+        app:layout_constraintTop_toBottomOf="@+id/vetPhoneInput" />
 
     <TextView
         android:id="@+id/pendingShotsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
         android:text="Pending Shots:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/givenShotsText" />
+        app:layout_constraintTop_toBottomOf="@+id/pShotsInput" />
 
     <TextView
         android:id="@+id/foodWaterText"
@@ -62,10 +62,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="60dp"
-        android:text="Consumtion:"
+        android:layout_marginTop="10dp"
+        android:text="Consumption:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pendingShotsText" />
+        app:layout_constraintTop_toBottomOf="@+id/pShotsInput2" />
 
     <TextView
         android:id="@+id/groomingText"
@@ -73,62 +73,52 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="10dp"
         android:text="Grooming:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/foodWaterText" />
+        app:layout_constraintTop_toBottomOf="@+id/pShotsInput3" />
 
     <EditText
         android:id="@+id/vetNameInput"
         android:layout_width="220dp"
         android:layout_height="48dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginBottom="92dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/givenShotsText"
-        app:layout_constraintStart_toEndOf="@+id/conditionsText2" />
+        app:layout_constraintStart_toStartOf="@+id/pShotsInput5"
+        app:layout_constraintTop_toTopOf="@+id/conditionsText2" />
 
     <EditText
         android:id="@+id/editText7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPostalAddress"
         android:text="Address"
-        app:layout_constraintBottom_toTopOf="@+id/givenShotsText"
-        app:layout_constraintStart_toEndOf="@+id/conditionsText2" />
+        app:layout_constraintStart_toStartOf="@+id/vetNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/vetNameInput" />
 
     <EditText
         android:id="@+id/vetPhoneInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="phone"
         android:text="Phone Number"
-        app:layout_constraintBottom_toTopOf="@+id/givenShotsText"
-        app:layout_constraintStart_toEndOf="@+id/conditionsText2" />
+        app:layout_constraintStart_toStartOf="@+id/editText7"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
 
     <EditText
         android:id="@+id/pShotsInput"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginBottom="20dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/pendingShotsText"
-        app:layout_constraintStart_toEndOf="@+id/givenShotsText" />
+        app:layout_constraintStart_toStartOf="@+id/vetPhoneInput"
+        app:layout_constraintTop_toTopOf="@+id/givenShotsText" />
 
     <EditText
         android:id="@+id/pShotsInput5"
@@ -147,38 +137,29 @@
         android:id="@+id/pShotsInput2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="32dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/foodWaterText"
-        app:layout_constraintStart_toEndOf="@+id/pendingShotsText" />
+        app:layout_constraintStart_toStartOf="@+id/pShotsInput"
+        app:layout_constraintTop_toTopOf="@+id/pendingShotsText" />
 
     <EditText
         android:id="@+id/pShotsInput3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginBottom="36dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/groomingText"
-        app:layout_constraintStart_toEndOf="@+id/foodWaterText" />
+        app:layout_constraintStart_toStartOf="@+id/pShotsInput2"
+        app:layout_constraintTop_toTopOf="@+id/foodWaterText" />
 
     <EditText
         android:id="@+id/pShotsInput4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginBottom="40dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/groomingText" />
+        app:layout_constraintStart_toStartOf="@+id/pShotsInput3"
+        app:layout_constraintTop_toTopOf="@+id/groomingText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

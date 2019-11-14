@@ -22,7 +22,7 @@ public class AboutFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         aboutViewModel =
                 ViewModelProviders.of(this).get(AboutViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_calender, container, false);
+        View root = inflater.inflate(R.layout.fragment_about, container, false);
         final TextView textView = root.findViewById(R.id.titleAbout);
         aboutViewModel.getText().observe(this, new Observer<String>() {
             @Override
