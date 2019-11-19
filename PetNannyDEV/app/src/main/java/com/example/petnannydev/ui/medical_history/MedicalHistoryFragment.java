@@ -30,6 +30,10 @@ public class MedicalHistoryFragment extends Fragment {
 
             }
         });
+
         return root;
     }
+
+
+
 }

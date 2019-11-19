@@ -10,111 +10,126 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/conditionsTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Conditions:" />
+                android:text="Conditions:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <MultiAutoCompleteTextView
                 android:id="@+id/petConditions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
-                android:hint="Enter your pet condition here" />
+                android:hint="Enter Pet Conditions"
+                android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/vetTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Vet Info:" />
+                android:text="Vet Info:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/vetName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
                 android:ems="10"
-                android:hint="Name"
+                android:hint="Vet Name"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editText13"
+                android:id="@+id/vetAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
                 android:ems="10"
-                android:hint="Address"
+                android:hint="Vet Address"
                 android:inputType="textPostalAddress" />
 
             <EditText
-                android:id="@+id/editText12"
+                android:id="@+id/vetPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
                 android:ems="10"
-                android:hint="phone"
+                android:hint="Vet Phone Number"
                 android:inputType="phone" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/givenShotsTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Given Shots:" />
+                android:text="Given Shots:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <MultiAutoCompleteTextView
                 android:id="@+id/givenShots"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
-                android:hint="Enter shots that have been already been given to your pet" />
+                android:hint="Enter Shots Given" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/pendingShotsTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pending Shots:" />
+                android:text="Pending Shots:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <MultiAutoCompleteTextView
                 android:id="@+id/pendingShots"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
-                android:hint="Enter the shots that your pet is waiting on" />
+                android:hint="Enter Shots Pending" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/consumptionsTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Consumptions:" />
+                android:text="Consumptions:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/foodConsumptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:hint="Enter Pet's Foods" />
+
+            <TextView
+                android:id="@+id/groomingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grooming:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <MultiAutoCompleteTextView
                 android:id="@+id/grooming"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
-                android:hint="Enter what and when does you pet eat" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Grooming:" />
-
-            <MultiAutoCompleteTextView
-                android:id="@+id/consumption"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
-                android:hint="Enter the frequent you pet needs grooming" />
+                android:hint="Enter Grooming Frequency" />
 
         </LinearLayout>
     </ScrollView>
