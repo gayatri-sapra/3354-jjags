@@ -211,7 +211,7 @@ public class CustomCalendarView extends LinearLayout {
         Calendar monthCalendar = (Calendar) calendar.clone();
         monthCalendar.set(Calendar.DAY_OF_MONTH,1);
         int firstDayOfMonth = monthCalendar.get(Calendar.DAY_OF_WEEK)-1;
-        monthCalendar.add(Calendar.DAY_OF_MONTH, firstDayOfMonth);
+        monthCalendar.add(Calendar.DAY_OF_MONTH, -firstDayOfMonth);
         CollectEventsPerMonth(monthFormat.format(calendar.getTime()),yearFormat.format(calendar.getTime()));
 
         while(dates.size() < MAX_CALENDAR_DAYS)

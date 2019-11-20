@@ -119,10 +119,13 @@
         </LinearLayout>
 
     <GridView
+        android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id = "@+id/gridview"
-        android:numColumns = "7"></GridView>
+        android:layout_gravity="bottom"
+        android:numColumns="7"
+
+        ></GridView>
 
 
     </LinearLayout>
