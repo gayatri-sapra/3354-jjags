@@ -10,15 +10,15 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-<<<<<<< HEAD
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-=======
+        =======
         tools:layout_editor_absoluteX="20dp"
         tools:layout_editor_absoluteY="20dp">
->>>>>>> 89cb5e65744fc195abe64c01d60d262df05f9573
+        >>>>>>> 89cb5e65744fc195abe64c01d60d262df05f9573
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,6 +30,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Conditions:"
+                android:textColor="#0D6C8A"
+                android:textColorLink="#0D6C8A"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -46,6 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Vet Info:"
+                android:textColor="#0D6C8A"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -81,6 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Given Shots:"
+                android:textColor="#0D6C8A"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -96,6 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Pending Shots:"
+                android:textColor="#0D6C8A"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -111,6 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Consumptions:"
+                android:textColor="#0D6C8A"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -126,6 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Grooming:"
+                android:textColor="#0D6C8A"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
