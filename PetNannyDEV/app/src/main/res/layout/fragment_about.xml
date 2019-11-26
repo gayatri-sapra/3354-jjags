@@ -39,7 +39,7 @@
         android:layout_width="318dp"
         android:layout_height="163dp"
         android:layout_marginTop="300dp"
-        android:text="Can this App only  be used for Dogs?\nNo! It can be used for any Animal! \n\nCan we have more than one profile? \nNot yet! Wait for future updates.\n\nCan I adda Picture of my Pet?\nYes! Go to the Profile Page, and Upload a Picture of your Pet. "
+        android:text="Can this app only  be used for dogs?\nNo! It can be used for any animal! \n\nCan we have more than one profile? \nNot yet! Wait for future updates.\n\nCan I add a picture of my pet?\nYes! Go to the profile page, and upload a picture of your pet. "
         app:layout_constraintBottom_toTopOf="@+id/questionsText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.581"
