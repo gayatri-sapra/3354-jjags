@@ -15,10 +15,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-        =======
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="20dp">
-        >>>>>>> 89cb5e65744fc195abe64c01d60d262df05f9573
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -3,149 +3,135 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="20dp">
 
-    <ImageView
-        android:id="@+id/profilePic"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="24dp"
-        android:adjustViewBounds="false"
-        android:contentDescription="@string/image_upload"
-        android:cropToPadding="false"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/image_upload"
-        app:layout_constraintEnd_toEndOf="@+id/profilePic"
-        app:layout_constraintStart_toStartOf="@+id/profilePic"
-        app:layout_constraintTop_toBottomOf="@+id/profilePic" />
+        android:orientation="vertical">
 
-    <TextView
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginVertical="0dp"
+            android:layout_marginTop="24dp"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:contentDescription="@string/image_upload"
+            android:cropToPadding="false"
+            android:scaleType="center"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            tools:srcCompat="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/image_upload" />
+
+        <TextView
         android:id="@+id/petName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="24dp"
         android:text="Name: "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        android:textColor="#0D6C8A"
+        android:textColorLink="#0D6C8A"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:hint="Enter Pet Name"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/owner"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="32dp"
         android:text="Owner: "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/petName" />
+        android:textColor="#0D6C8A"
+        android:textColorLink="#0D6C8A"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/ownerInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:hint="Enter Owner Name"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/breed"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="32dp"
         android:text="Breed:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/owner" />
+        android:textColor="#0D6C8A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/breedInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:hint="Enter Pet Breed"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/birthday"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="32dp"
         android:text="Birthday:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/breed" />
+        android:textColor="#0D6C8A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/birthdayInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:hint="Enter Pet Birthday"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/age"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="32dp"
         android:text="Age:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/birthday" />
+        android:textColor="#0D6C8A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/nameInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="12dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
-        app:layout_constraintStart_toEndOf="@+id/petName"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <EditText
-        android:id="@+id/ownerInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
-        app:layout_constraintStart_toEndOf="@+id/owner"
-        app:layout_constraintTop_toBottomOf="@+id/nameInput" />
-
-    <EditText
-        android:id="@+id/breedInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
-        app:layout_constraintStart_toEndOf="@+id/breed"
-        app:layout_constraintTop_toBottomOf="@+id/ownerInput" />
-
-    <EditText
-        android:id="@+id/birthdayInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/ageInput"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/birthday"
-        app:layout_constraintTop_toBottomOf="@+id/breedInput" />
-
-    <EditText
+    <MultiAutoCompleteTextView
         android:id="@+id/ageInput"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
-        app:layout_constraintStart_toEndOf="@+id/age"
-        app:layout_constraintTop_toBottomOf="@+id/birthdayInput" />
+        android:layout_marginLeft="80dp"
+        android:hint="Enter Pet Age"
+        android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

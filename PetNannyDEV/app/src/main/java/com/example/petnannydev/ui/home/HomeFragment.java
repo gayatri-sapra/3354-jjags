@@ -29,7 +29,10 @@ public class HomeFragment extends Fragment {
     Button button;
     private static final int PICK_IMAGE = 100;
     Uri imageUri;
-
+    EditText name;
+    EditText owner;
+    EditText age;
+    EditText breed;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -46,6 +49,11 @@ public class HomeFragment extends Fragment {
             openGallery();
         }
         });
+
+        name = (EditText) root.findViewById(R.id.nameInput);
+        owner = (EditText) root.findViewById(R.id.ownerInput);
+        age = (EditText) root.findViewById(R.id.ageInput);
+        breed = (EditText) root.findViewById(R.id.breedInput);
         return root;
     }
 
@@ -58,11 +66,12 @@ public class HomeFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data)
     {
         super.onActivityResult(requestCode,resultCode,data);
-        if(resultCode == RESULT_OK && requestCode == PICK_IMAGE)
-        {
+        if(resultCode == RESULT_OK && requestCode == PICK_IMAGE) {
             imageUri = data.getData();
             profilePic.setImageURI(imageUri);
+            name.setText(name.getEditableText(), TextView.BufferType.SPANNABLE);
         }
+
 
     }
 
