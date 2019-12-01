@@ -8,8 +8,8 @@
 ## Profile
 #### The Profile section is used by pet owners to input their pet's information. They can upload a picture of their pet, their pet's name, age, birthday, breed etc. They can also add their own names as owners of their pet. 
 
-## Calendar
-#### The Calendar section displays events that the pet owners add to keep track of important dates regarding their pet. For example, the calendar automatically displays the pet's birthday annually. Furthermore, owners can add custom events with event details. They can also create Vet and Grooming Appointments to maintain the health of their pet!
+## To Do
+#### The To Do section displays a To-Do List of items that the pet owners add to keep track of important dates and information regarding their pet. 
 
 ## Health
 #### The Health section gives pet owners the opportunity to add information critical to the health of their pet. They can add medical history, shots that have already been given, shots that are pending, vet information, and groomer information. 
