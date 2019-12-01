@@ -44,7 +44,7 @@
             android:backgroundTint="@color/colorPrimary"
             android:text="@string/image_upload" />
 
-        <TextView
+    <TextView
         android:id="@+id/petName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -133,5 +133,4 @@
 
     </LinearLayout>
 </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
