@@ -23,6 +23,13 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/titleAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="" />
+
+        <TextView
             android:id="@+id/aboutParagraph"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +53,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="Can this app only  be used for dogs?\nNo! It can be used for any animal! \n\nCan we have more than one profile? \nNot yet! Wait for future updates.\n\nCan I add a picture of my pet?\nYes! Go to the profile page, and upload a picture of your pet. " />
+            android:text="Can this app only  be used for dogs?\nNo! It can be used for any animal! \n\nCan we have more than one profile? \nNot yet! Wait for future updates.\n\nCan I add a picture of my pet?\nYes! Go to the profile page, and upload a picture of your pet. "
+            android:layout_marginBottom="30dp"/>
 
     </LinearLayout>
 </ScrollView>
