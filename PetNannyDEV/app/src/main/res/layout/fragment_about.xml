@@ -4,87 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="20dp"
     android:background="@color/lavender">
 
-    <TextView
-        android:id="@+id/aboutAppParagraph2"
-        android:layout_width="312dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="80dp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginBottom="32dp"
-        android:text="The Pet Nanny is an application which is directed towards owners of pets. They can download this android application to maintain the information of their pet. The app has four main sections. It has a Profile, Calendar, Health  and an About section."
-        app:layout_constraintBottom_toTopOf="@+id/questionsText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleAbout"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintTop_toTopOf="parent" >
 
-    <TextView
-        android:id="@+id/aboutAppText"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="About The App"
-        android:textColor="#0D6C8A"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/aboutAppParagraph2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleAbout"
-        app:layout_constraintVertical_bias="0.785" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/aboutAppParagraph"
-        android:layout_width="318dp"
-        android:layout_height="163dp"
-        android:layout_marginTop="300dp"
-        android:text="Can this app only  be used for dogs?\nNo! It can be used for any animal! \n\nCan we have more than one profile? \nNot yet! Wait for future updates.\n\nCan I add a picture of my pet?\nYes! Go to the profile page, and upload a picture of your pet. "
-        app:layout_constraintBottom_toTopOf="@+id/questionsText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.581"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleAbout"
-        app:layout_constraintVertical_bias="0.364" />
+        <TextView
+            android:id="@+id/aboutParagraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="The Pet Nanny is an application which is directed towards owners of pets. They can download this android application to maintain the information of their pet. The app has four main sections. It has a Profile, Calendar, Health  and an About section." />
 
-    <TextView
-        android:id="@+id/questionsText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:text="FAQs"
-        android:textColor="#0D6C8A"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aboutAppText" />
+        <TextView
+            android:id="@+id/questionsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0D6C8A"
+            android:textColorLink="#0D6C8A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="FAQs"
+            android:layout_marginVertical="30dp"
+            android:layout_centerVertical="true" />
 
-    <TextView
-        android:id="@+id/helpText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:text="Help"
-        android:textColor="#0D6C8A"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/questionsText" />
+        <TextView
+            android:id="@+id/questionsParagraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Can this app only  be used for dogs?\nNo! It can be used for any animal! \n\nCan we have more than one profile? \nNot yet! Wait for future updates.\n\nCan I add a picture of my pet?\nYes! Go to the profile page, and upload a picture of your pet. " />
 
-    <TextView
-        android:id="@+id/titleAbout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/title_about"
-        android:textColor="#0D6C8A"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    </LinearLayout>
+</ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
