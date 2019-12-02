@@ -2,6 +2,8 @@ package com.example.petnannydev.ui.home;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Picture;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -16,6 +18,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -39,6 +42,7 @@ public class HomeFragment extends Fragment {
     EditText petBreed;
     EditText petBirth;
 
+    public static Uri imageUriPerm = null;
     public static final String LAST_TEXT1 = "petName";
     public static final String LAST_TEXT2 = "petOwner";
     public static final String LAST_TEXT3 = "petAge";
@@ -67,6 +71,11 @@ public class HomeFragment extends Fragment {
         petAge = (EditText) root.findViewById(R.id.ageInput);
         petBreed = (EditText) root.findViewById(R.id.breedInput);
         petBirth = (EditText) root.findViewById(R.id.birthdayInput);
+        if(imageUriPerm != null)
+        {
+            profilePic.setImageURI(imageUriPerm);
+        }
+
 
         final SharedPreferences hPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
         petName.setText(hPref.getString(LAST_TEXT1, ""));
@@ -74,6 +83,8 @@ public class HomeFragment extends Fragment {
         petAge.setText(hPref.getString(LAST_TEXT3, ""));
         petBreed.setText(hPref.getString(LAST_TEXT4, ""));
         petBirth.setText(hPref.getString(LAST_TEXT5, ""));
+
+
 
         petName.addTextChangedListener(new TextWatcher() {
             @Override
@@ -152,7 +163,9 @@ public class HomeFragment extends Fragment {
         super.onActivityResult(requestCode,resultCode,data);
         if(resultCode == RESULT_OK && requestCode == PICK_IMAGE) {
             imageUri = data.getData();
-            profilePic.setImageURI(imageUri);
+            imageUriPerm = imageUri;
+            profilePic.setImageURI(imageUriPerm);
+
             petName.setText(petName.getEditableText(), TextView.BufferType.SPANNABLE);
         }
 
