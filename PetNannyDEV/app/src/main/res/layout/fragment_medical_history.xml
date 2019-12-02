@@ -51,32 +51,31 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <EditText
+            <MultiAutoCompleteTextView
                 android:id="@+id/vetName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
-                android:ems="10"
                 android:hint="Vet Name"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:maxLength="25" />
 
-            <EditText
+            <MultiAutoCompleteTextView
                 android:id="@+id/vetAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
-                android:ems="10"
                 android:hint="Vet Address"
                 android:inputType="textPostalAddress" />
 
-            <EditText
+            <MultiAutoCompleteTextView
                 android:id="@+id/vetPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
-                android:ems="10"
                 android:hint="Vet Phone Number"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:maxLength="10" />
 
             <TextView
                 android:id="@+id/givenShotsTitle"
