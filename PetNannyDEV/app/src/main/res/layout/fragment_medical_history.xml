@@ -75,7 +75,7 @@
                 android:layout_marginLeft="80dp"
                 android:hint="Vet Phone Number"
                 android:inputType="phone"
-                android:maxLength="10" />
+                android:maxLength="12" />
 
             <TextView
                 android:id="@+id/givenShotsTitle"
