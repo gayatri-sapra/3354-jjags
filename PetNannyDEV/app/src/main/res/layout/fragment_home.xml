@@ -27,13 +27,13 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginVertical="0dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="240dp"
             android:adjustViewBounds="true"
             android:clickable="false"
             android:contentDescription="@string/image_upload"
             android:cropToPadding="false"
             android:scaleType="center"
-            app:srcCompat="@mipmap/ic_launcher_round"
+            app:srcCompat="@mipmap/ic_launcher"
             tools:srcCompat="@color/colorPrimaryDark" />
 
         <Button
@@ -50,8 +50,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Name: "
-        android:textColor="#0D6C8A"
-        android:textColorLink="#0D6C8A"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"/>
 
@@ -61,6 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
         android:hint="Enter Pet Name"
+        android:maxLength="200"
         android:textSize="18sp" />
 
     <TextView
@@ -68,8 +69,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Owner: "
-        android:textColor="#0D6C8A"
-        android:textColorLink="#0D6C8A"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"/>
 
@@ -79,6 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
         android:hint="Enter Owner Name"
+        android:maxLength="200"
         android:textSize="18sp" />
 
     <TextView
@@ -86,7 +88,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Breed:"
-        android:textColor="#0D6C8A"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -96,6 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
         android:hint="Enter Pet Breed"
+        android:maxLength="200"
         android:textSize="18sp" />
 
     <TextView
@@ -103,38 +106,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Birthday:"
-        android:textColor="#0D6C8A"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/birthdayInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:ems="10"
-            android:hint="Enter Pet Birthday"
-            android:inputType="date"
-            android:maxLength="10" />
+    <EditText
+        android:id="@+id/birthdayInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:hint="MM/DD/YY"
+        android:inputType="date"
+        android:maxLength="10" />
 
-        <TextView
+    <TextView
         android:id="@+id/age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Age:"
-        android:textColor="#0D6C8A"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/ageInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:ems="10"
-            android:hint="Enter Pet Age"
-            android:inputType="numberDecimal"
-            android:maxLength="3" />
+    <EditText
+        android:id="@+id/ageInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:hint="Enter Pet Age"
+        android:inputType="numberDecimal"
+        android:maxLength="3" />
 
     </LinearLayout>
 </ScrollView>
