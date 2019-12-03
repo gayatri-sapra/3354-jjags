@@ -2,10 +2,12 @@ package com.example.petnannydev.ui.calender;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -19,6 +21,7 @@ import com.example.petnannydev.R;
 
 public class CalenderFragment extends Fragment{
 
+    private static final String TAG = "CalenderActivity";
     private CalenderViewModel calenderViewModel;
     private Button eventButton;
     View root;
@@ -36,17 +39,22 @@ public class CalenderFragment extends Fragment{
             }
         });
         return root;
+
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_calender);
-        calenderViewModel = (CalenderViewModel) findViewById(R.id.calenderViewModel);
+        calenderViewModel = (CalenderViewModel) root.findViewById(R.id.calendarView);
 
         calenderViewModel.setOnDateChangerListener(new CalenderViewModel.OnDateChangeListener(){
             @Override
-            public void 
+            public void onSelectedDayChange(CalenderViewModel calenderViewModel, int i, int i1, int i2){
+                String date = (i1 + 1) + "/" + i2 + "/" + i;
+                Log.d(TAG, "onSelectedDayChange: mm/dd/yyyy: " + date);
+
+            }
 
         });
 
