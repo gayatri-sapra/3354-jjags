@@ -2,6 +2,8 @@ package com.example.petnannydev.ui.home;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Picture;
 import android.media.Image;
 import android.net.Uri;
@@ -10,6 +12,8 @@ import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Base64;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +30,10 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.petnannydev.R;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.ResourceBundle;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -77,6 +85,9 @@ public class HomeFragment extends Fragment {
         }
 
 
+        
+        
+        
         final SharedPreferences hPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
         petName.setText(hPref.getString(LAST_TEXT1, ""));
         petOwner.setText(hPref.getString(LAST_TEXT2, ""));
@@ -84,6 +95,19 @@ public class HomeFragment extends Fragment {
         petBreed.setText(hPref.getString(LAST_TEXT4, ""));
         petBirth.setText(hPref.getString(LAST_TEXT5, ""));
 
+        SharedPreferences myPrefrence = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        String imageS = myPrefrence.getString("imagePreferance", "");
+        Log.d("Image Log:", imageS);
+        Bitmap imageB;
+        if(!imageS.equals(""))
+        {
+            imageB = decodeToBase64(imageS);
+            profilePic.setImageURI(imageB);
+
+
+        }
+
+        System.out.println("I have been EX");
 
         petName.addTextChangedListener(new TextWatcher() {
             @Override
@@ -162,13 +186,42 @@ public class HomeFragment extends Fragment {
         super.onActivityResult(requestCode,resultCode,data);
         if(resultCode == RESULT_OK && requestCode == PICK_IMAGE) {
             imageUri = data.getData();
+
+
             imageUriPerm = imageUri;
             profilePic.setImageURI(imageUriPerm);
+
             petName.setText(petName.getEditableText(), TextView.BufferType.SPANNABLE);
+
+        }
+
+        try {
+            Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), imageUri);
+            SharedPreferences myPrefrence = PreferenceManager.getDefaultSharedPreferences(getActivity());
+            SharedPreferences.Editor editor = myPrefrence.edit();
+            editor.putString("imagePreferance", encodeToBase64(bitmap));
+            editor.commit();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
 
+
+    }
+    public static Bitmap decodeToBase64(String input) {
+        byte[] decodedByte = Base64.decode(input, 0);
+        return BitmapFactory.decodeByteArray(decodedByte, 0, decodedByte.length);
     }
 
+    public static String encodeToBase64(Bitmap image) {
+        Bitmap immage = image;
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        immage.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        byte[] b = baos.toByteArray();
+        String imageEncoded = Base64.encodeToString(b, Base64.DEFAULT);
+
+        Log.d("Image Log:", imageEncoded);
+        return imageEncoded;
+    }
 
 }
