@@ -31,7 +31,7 @@ public class ToDoList extends AppCompatActivity {
         });
         discardButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-               
+
             }
         });
     }
