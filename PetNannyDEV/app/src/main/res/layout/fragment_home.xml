@@ -107,15 +107,17 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <MultiAutoCompleteTextView
-        android:id="@+id/birthdayInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:hint="Enter Pet Birthday"
-        android:textSize="18sp" />
+        <EditText
+            android:id="@+id/birthdayInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:ems="10"
+            android:hint="Enter Pet Birthday"
+            android:inputType="date"
+            android:maxLength="10" />
 
-    <TextView
+        <TextView
         android:id="@+id/age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -124,13 +126,15 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <MultiAutoCompleteTextView
-        android:id="@+id/ageInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:hint="Enter Pet Age"
-        android:textSize="18sp" />
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:ems="10"
+            android:hint="Enter Pet Age"
+            android:inputType="numberDecimal"
+            android:maxLength="3" />
 
     </LinearLayout>
 </ScrollView>
