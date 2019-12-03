@@ -23,6 +23,7 @@ public class CalenderFragment extends Fragment{
 
     private static final String TAG = "CalenderActivity";
     private CalenderViewModel calenderViewModel;
+    private CalendarView Calender;
     private Button eventButton;
     View root;
 
@@ -32,12 +33,20 @@ public class CalenderFragment extends Fragment{
                 ViewModelProviders.of(this).get(CalenderViewModel.class);
         root = inflater.inflate(R.layout.fragment_calender, container, false);
         eventButton = (Button) root.findViewById(R.id.eventButton);
-        eventButton.setOnClickListener(new View.OnClickListener(){
+
+        Calender = (CalendarView) root.findViewById(R.id.calendarView);
+
+        Calender.setOnDateChangerListener(new Calender.OnDateChangeListener(){
             @Override
-            public void onClick(View v){
-                openToDoList();
+            public void onSelectedDayChange(CalenderViewModel calenderViewModel, int i, int i1, int i2){
+                String date = (i1 + 1) + "/" + i2 + "/" + i;
+                Log.d(TAG, "onSelectedDayChange: mm/dd/yyyy: " + date);
+
             }
+
         });
+
+
         return root;
 
     }
