@@ -17,35 +17,35 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.petnannydev.R;
 
-public class CalenderFragment extends AppCompatActivity{
+public class CalenderFragment extends Fragment{
 
     private CalenderViewModel calenderViewModel;
     private Button eventButton;
+    View root;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         calenderViewModel =
                 ViewModelProviders.of(this).get(CalenderViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_calender, container, false);
-        return root;
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        eventButton = (Button) findViewById(R.id.eventButton);
+        root = inflater.inflate(R.layout.fragment_calender, container, false);
+        eventButton = (Button) root.findViewById(R.id.eventButton);
         eventButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 openToDoList();
             }
         });
+        return root;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+
     }
 
     public void openToDoList(){
-        Intent intent = new Intent(this, ToDoList.class);
+        Intent intent = new Intent(getActivity(), ToDoList.class);
         startActivity(intent);
     }
 }

@@ -102,7 +102,7 @@ public class HomeFragment extends Fragment {
         if(!imageS.equals(""))
         {
             imageB = decodeToBase64(imageS);
-            profilePic.setImageURI(imageB);
+            profilePic.setImageURI(imageUriPerm);
 
 
         }
@@ -175,6 +175,11 @@ public class HomeFragment extends Fragment {
 
 
 
+    public void onStop(Intent data)
+    {
+        imageUriPerm = data.getData();
+    }
+
     public void openGallery(){
         Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
         startActivityForResult(gallery, PICK_IMAGE);
@@ -223,5 +228,7 @@ public class HomeFragment extends Fragment {
         Log.d("Image Log:", imageEncoded);
         return imageEncoded;
     }
+
+
 
 }
