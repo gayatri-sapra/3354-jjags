@@ -83,10 +83,6 @@ public class HomeFragment extends Fragment {
         {
             profilePic.setImageURI(imageUriPerm);
         }
-
-
-        
-        
         
         final SharedPreferences hPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
         petName.setText(hPref.getString(LAST_TEXT1, ""));

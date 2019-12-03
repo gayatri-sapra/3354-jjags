@@ -29,8 +29,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Conditions:"
-                android:textColor="#0D6C8A"
-                android:textColorLink="#0D6C8A"
+                android:textColor="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Vet Info:"
-                android:textColor="#0D6C8A"
+                android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -82,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Given Shots:"
-                android:textColor="#0D6C8A"
+                android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -98,7 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Pending Shots:"
-                android:textColor="#0D6C8A"
+                android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -114,7 +114,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Consumptions:"
-                android:textColor="#0D6C8A"
+                android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -130,7 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Grooming:"
-                android:textColor="#0D6C8A"
+                android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
