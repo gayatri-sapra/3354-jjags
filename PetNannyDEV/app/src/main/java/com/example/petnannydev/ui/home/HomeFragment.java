@@ -85,7 +85,6 @@ public class HomeFragment extends Fragment {
         petBirth.setText(hPref.getString(LAST_TEXT5, ""));
 
 
-
         petName.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -165,7 +164,6 @@ public class HomeFragment extends Fragment {
             imageUri = data.getData();
             imageUriPerm = imageUri;
             profilePic.setImageURI(imageUriPerm);
-
             petName.setText(petName.getEditableText(), TextView.BufferType.SPANNABLE);
         }
 

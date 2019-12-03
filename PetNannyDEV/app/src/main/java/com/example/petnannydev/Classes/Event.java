@@ -1,3 +1,5 @@
+package com.example.petnannydev.Classes;
+
 public class Event {
     private int startTime;
     private int endTime;

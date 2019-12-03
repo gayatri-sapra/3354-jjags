@@ -1,3 +1,5 @@
+package com.example.petnannydev.Classes;
+
 // import java.awt.*;
 
 /** Using java libraries such as awt does not work:

@@ -1,3 +1,6 @@
+
+package com.example.petnannydev.Classes;
+
 public class PetProfile {
     private String name;
     private String owner;
