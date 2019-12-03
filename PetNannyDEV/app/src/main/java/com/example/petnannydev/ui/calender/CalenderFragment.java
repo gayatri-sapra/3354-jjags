@@ -41,6 +41,15 @@ public class CalenderFragment extends Fragment{
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment_calender);
+        calenderViewModel = (CalenderViewModel) findViewById(R.id.calenderViewModel);
+
+        calenderViewModel.setOnDateChangerListener(new CalenderViewModel.OnDateChangeListener(){
+            @Override
+            public void 
+
+        });
+
 
     }
 
