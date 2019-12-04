@@ -186,25 +186,26 @@ public class HomeFragment extends Fragment {
     {
         super.onActivityResult(requestCode,resultCode,data);
         if(resultCode == RESULT_OK && requestCode == PICK_IMAGE) {
-            imageUri = data.getData();
 
+            if(data.getData() != null) {
+                imageUri = data.getData();
+                imageUriPerm = imageUri;
+                profilePic.setImageURI(imageUriPerm);
 
-            imageUriPerm = imageUri;
-            profilePic.setImageURI(imageUriPerm);
-
-            petName.setText(petName.getEditableText(), TextView.BufferType.SPANNABLE);
+                petName.setText(petName.getEditableText(), TextView.BufferType.SPANNABLE);
+            }
 
         }
 
-        try {
-            Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), imageUri);
-            SharedPreferences myPrefrence = PreferenceManager.getDefaultSharedPreferences(getActivity());
-            SharedPreferences.Editor editor = myPrefrence.edit();
-            editor.putString("imagePreferance", encodeToBase64(bitmap));
-            editor.commit();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), imageUri);
+//            SharedPreferences myPrefrence = PreferenceManager.getDefaultSharedPreferences(getActivity());
+//            SharedPreferences.Editor editor = myPrefrence.edit();
+//            editor.putString("imagePreferance", encodeToBase64(bitmap));
+//            editor.commit();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
 
 
