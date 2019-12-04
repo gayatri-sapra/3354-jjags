@@ -8,8 +8,8 @@
 ## Profile
 #### The Profile section is used by pet owners to input their pet's information. They can upload a picture of their pet, their pet's name, age, birthday, breed etc. They can also add their own names as owners of their pet. 
 
-## To Do
-#### The To Do section displays a To-Do List of items that the pet owners add to keep track of important dates and information regarding their pet. 
+## Calendar
+#### The Calendar section makes use of the Google Calendar API, hence providing users with direct access from the application to Google Calendar.  
 
 ## Health
 #### The Health section gives pet owners the opportunity to add information critical to the health of their pet. They can add medical history, shots that have already been given, shots that are pending, vet information, and groomer information. 
