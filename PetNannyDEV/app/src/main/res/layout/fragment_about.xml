@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="The Pet Nanny is an application which is directed towards owners of pets. They can download this android application to maintain the information of their pet. The app has four main sections. It has a Profile, Calendar, Health  and an About section." />
+            android:text="The Pet Nanny is an application which is directed towards owners of pets. They can download this android application to maintain the information of their pet. The app has four main sections. It has a Profile, Calendar, Health, and an About section." />
 
         <TextView
             android:id="@+id/questionsText"
