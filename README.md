@@ -1,9 +1,10 @@
 ## Team Name:       JJAGS
 ## Project Name:    Pet Nanny 
-## Class:                 CS 3354
+## Class:           CS 3354
+## Contributers:    Gayatri Sapra, Suleyman Itmer, Ayush Shah, Jason Dang 
 ###
 ## Introduction
-#### The Pet Nanny is an application which is directed towards owners of pets. They can download this android application to maintain the information of their pet. The app has four main sections. It has a Profile, Calendar, Health  and an About section.
+#### The Pet Nanny is an application which is directed towards owners of pets. They can download this android application to maintain the information of their pet. It is meant to be an easy platform for use by pet owners to store all information that might be necessary for their pwt's wellbeing. To ensure this, the app has four main sections. It has a Profile, Calendar, Health  and an About section.
 
 ## Profile
 #### The Profile section is used by pet owners to input their pet's information. They can upload a picture of their pet, their pet's name, age, birthday, breed etc. They can also add their own names as owners of their pet. 
